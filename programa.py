@@ -9,6 +9,13 @@
 
 # --------------------------------------------------------------------------------------------------------------
 
+def funcion_promedio(List_number):
+    avg = 0
+    for numbers in range (5):
+        avg += List_number[numbers]
+    avg /= 5 
+    return avg
+
 #Lista
 def funcion_ingresar_datos():
     List_Number = []
