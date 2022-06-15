@@ -13,6 +13,6 @@
 def funcion_ingresar_datos():
     List_Number = []
     for numbers in range (5):
-     numbers_add = int(input("Ingrese un numero: "))
-     List_Number.append (numbers_add)
+        numbers_add = int(input("Ingrese un numero: "))
+        List_Number.append (numbers_add)
     return List_Number
