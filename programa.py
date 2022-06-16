@@ -9,3 +9,20 @@
 
 # --------------------------------------------------------------------------------------------------------------
 
+
+def funcion_suma (list_number):
+    suma  = 0 
+    for numbers in range (5):
+        suma += list_number [numbers]
+    return suma
+
+def funcion_ingresar_datos():
+    list_number = []
+    for numbers in range (5):
+        numbers_add = int(input("Ingrese un número: "))
+        list_number.append(numbers_add)
+    return list_number
+
+lista = funcion_ingresar_datos()
+suma = funcion_suma(lista)
+print(suma) 
