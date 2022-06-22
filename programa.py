@@ -7,7 +7,7 @@
 # Función Máximo: recibe como parámetro la lista y devuelve el valor máximo de todos los elementos que contiene.
 # Función Mínimo: recibe como parámetro la lista y devuelve el valor mínimo de todos los elementos que contiene.
 
-# --------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------
 
 # Función ingresar datos en una lista Daia D. : 
 def funcion_ingresar_datos():
@@ -39,19 +39,23 @@ def funcion_suma (List_number):
 #aqui funcion minimo 
 
 
-
-#aqui funcion maximo
+#Función maximo Edgar G. :
+def funcion_maximo(List_number):
+    maximo = List_number[0]
+    for x in List_number:
+        if x > maximo :
+             maximo = x
+    return maximo
 
 
 lista = funcion_ingresar_datos()
+
 promedio = funcion_promedio(lista)
 suma = funcion_suma(lista)
-
+maximo = funcion_maximo(lista)
 #aqui variable minimo con su llamada
-#aqui variable maximo con su llamada
 
 print(promedio)
 print(suma) 
-
+print(maximo)
 # aqui print de llamada min
-# aqui print de llamada a max
