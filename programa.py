@@ -9,20 +9,49 @@
 
 # --------------------------------------------------------------------------------------------------------------
 
+# Función ingresar datos en una lista Daia D. : 
+def funcion_ingresar_datos():
+    List_Number = []
+    for numbers in range (5):
+        numbers_add = int(input("Ingrese un numero: "))
+        List_Number.append (numbers_add)
+    return List_Number
 
-def funcion_suma (list_number):
+
+# Función Promedio Susana G. :
+def funcion_promedio(List_number):
+    avg = 0
+    for numbers in range (5):
+        avg += List_number[numbers]
+    avg /= 5 
+    avg = int(avg)
+    return avg
+
+
+# Función Suma Agustina C. :
+def funcion_suma (List_number):
     suma  = 0 
     for numbers in range (5):
-        suma += list_number [numbers]
+        suma += List_number [numbers]
     return suma
 
-def funcion_ingresar_datos():
-    list_number = []
-    for numbers in range (5):
-        numbers_add = int(input("Ingrese un número: "))
-        list_number.append(numbers_add)
-    return list_number
+
+#aqui funcion minimo 
+
+
+
+#aqui funcion maximo
+
 
 lista = funcion_ingresar_datos()
+promedio = funcion_promedio(lista)
 suma = funcion_suma(lista)
+
+#aqui variable minimo con su llamada
+#aqui variable maximo con su llamada
+
+print(promedio)
 print(suma) 
+
+# aqui print de llamada min
+# aqui print de llamada a max
