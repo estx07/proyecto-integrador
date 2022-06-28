@@ -36,7 +36,14 @@ def funcion_suma (List_number):
     return suma
 
 
-#aqui funcion minimo 
+#aqui funcion minimo Maria GP
+def funcion_minimo(List_number):
+    minimo = List_number[0]
+    for x in List_number:
+        if x < minimo:
+             minimo = x
+    return minimo
+
 
 
 #Función maximo Edgar G. :
@@ -53,9 +60,9 @@ lista = funcion_ingresar_datos()
 promedio = funcion_promedio(lista)
 suma = funcion_suma(lista)
 maximo = funcion_maximo(lista)
-#aqui variable minimo con su llamada
+minimo = funcion_minimo(lista)
 
 print(promedio)
 print(suma) 
 print(maximo)
-# aqui print de llamada min
+print(minimo)
