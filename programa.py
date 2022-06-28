@@ -64,5 +64,5 @@ minimo = funcion_minimo(lista)
 
 print(promedio)
 print(suma) 
-print(maximo)
+print("El número máximo de la lista es:",maximo)
 print(minimo)
